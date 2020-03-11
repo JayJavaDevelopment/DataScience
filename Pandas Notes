@@ -1,0 +1,56 @@
+Current version 		: 1.0.0 (Release Jan 2020)
+Python version support	: 3.6.1 & above, 3.7, 3.8
+
+Miniconda
+	The simplest way to install not only pandas, but Python and the most popular packages that make up the SciPy stack (IPython, NumPy, Matplotlib, …) is with Anaconda
+	If you want to have more control on which packages, or have a limited internet bandwidth, then installing pandas with Miniconda may be a better solution
+	Miniconda allows you to create a minimal self contained Python installation, and then use the Conda command to install additional packages.
+	
+Validating the installation status
+	pd.test()
+	Result : pytest >= 5.0.1 and Hypothesis >= 3.58 (Expected)
+	
+Dependencies
+	setuptools			24.2.0
+	NumPy				1.13.3
+	python-dateutil		2.6.1
+	pytz				2017.2
+
+Pandas package Overview
+		It is built on top of NumPy.
+		It is a Python package providing fast, flexible, and expressive data structures designed to make working with “relational” or “labeled” data both easy and intuitive. 
+		It aims to be the fundamental high-level building block for doing practical, real world data analysis in Python.
+		Series and DataFrame are mutable, but in Series columns cannot be added againt DataFrame can add new column.
+		NumPy arrays have one dtype for the entire array, while pandas DataFrames have one dtype per column.
+		Pandas primarily uses the value np.nan to represent missing data. It is by default not included in computations.
+		Recommend the optimized pandas data access methods, .at, .iat, .loc and .iloc.
+		Adding a column to a DataFrame is relatively fast. 
+		Recommend way to add more rows is to add predefined list to dataframe.
+		By “group by” we are referring to a process involving one or more of the following steps:
+			Splitting the data into groups based on some criteria
+			Applying a function to each group independently
+			Combining the results into a data structure
+		Pandas has simple, powerful, and efficient functionality for performing resampling operations during frequency conversion (e.g., converting secondly data into 5-minutely data).
+		Pandas are well suited for 
+			1. Tabular data
+			2. Ordered / Unordered data (Time series)
+			3. Arbitary matrix data (Typed in rows and column)
+			4. Any form of observation and statical data.
+		Pandas has to 2 data structures
+			1. Series (1-D Data)
+			2. DataFrame (2-D Data)
+		Top activities of Pandas are	
+			0. Loading of data from csv, database and saving the data.
+			1. Handling of missing data (Fill / drop)
+			2. Size mutability i,e columns can be added or removed
+			3. Powerfull GroupBy functions
+			4. Easy to convert i,e converting array, numpy & series into DataFrame.
+			5. Slicing , fancy slicing & subsetting large data sets
+			6. Merging and joining of rows and columns
+			7. Reshaping and Pivoting the data using DataFrame
+			8. Timeseries
+			
+Why more than one data structure?
+	DataFrame is basically a 2D container, it contains series. Series is a 1D container for scalar values.
+	
+			
